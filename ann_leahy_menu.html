@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ann Leahy Coaching</title>
+  <link href="https://fonts.googleapis.com/css2?family=Prata&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Work Sans', sans-serif;
+      background-color: #f8f8f8;
+      margin: 0;
+    }
+
+    .navbar, .mobile-menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #0f2e33;
+      padding: 1rem 2rem;
+      color: white;
+      font-family: 'Prata', serif;
+    }
+
+    .logo {
+      font-size: 1.75rem;
+      letter-spacing: 1px;
+    }
+
+    .nav-links, .mobile-nav {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      padding: 0;
+      margin: 0;
+    }
+
+    .nav-links a, .mobile-nav a {
+      text-decoration: none;
+      color: white;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover, .mobile-nav a:hover {
+      color: #b47979;
+    }
+
+    .button-link {
+      background-color: #5b8296;
+      padding: 0.5rem 1rem;
+      border-radius: 25px;
+      color: white;
+    }
+
+    .hamburger {
+      background: none;
+      border: none;
+      font-size: 2rem;
+      color: white;
+      cursor: pointer;
+      display: none;
+    }
+
+    .mobile-nav {
+      display: none;
+      flex-direction: column;
+      background-color: #0f2e33;
+      padding: 1rem 2rem;
+    }
+
+    .mobile-nav.open {
+      display: flex;
+    }
+
+    @media screen and (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+
+      .hamburger {
+        display: block;
+      }
+
+      .home-content {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .home-content img {
+        max-width: 90%;
+      }
+    }
+
+    .hero-image {
+      width: 100%;
+      height: auto;
+    }
+
+    .home-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+      padding: 3rem 2rem;
+      background-color: #fff;
+      flex-wrap: wrap;
+    }
+
+    .home-content img {
+      max-width: 300px;
+      border-radius: 10px;
+    }
+
+    .text-block {
+      max-width: 500px;
+    }
+
+    .text-block h1 {
+      font-family: 'Prata', serif;
+      font-size: 2rem;
+      color: #0f2e33;
+    }
+
+    .text-block p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #eaeaea;
+    }
+
+    footer img {
+      max-width: 120px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Ann Leahy</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#approach">Approach</a></li>
+      <li><a href="#services">Coaching</a></li>
+      <li><a href="#testimonials">Stories</a></li>
+      <li><a href="#contact" class="button-link">Let’s Talk</a></li>
+    </ul>
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+  </nav>
+
+  <ul class="mobile-nav" id="mobileMenu">
+    <li><a href="#about">About</a></li>
+    <li><a href="#approach">Approach</a></li>
+    <li><a href="#services">Coaching</a></li>
+    <li><a href="#testimonials">Stories</a></li>
+    <li><a href="#contact" class="button-link">Let’s Talk</a></li>
+  </ul>
+
+  <img src="/mnt/data/Screen Shot 2025-06-24 at 8.10.13 AM.png" alt="Beach scene" class="hero-image" />
+
+  <section class="home-content">
+    <img src="/mnt/data/headshot.png" alt="Ann Leahy Headshot">
+    <div class="text-block">
+      <h1>Meet Ann</h1>
+      <p>
+        Ann Leahy is an ICF-certified coach passionate about helping individuals and organizations rediscover alignment, clarity, and joy. With a background in leadership and emotional intelligence, Ann creates a safe space for authentic transformation.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <img src="/mnt/data/associate-certified-coach-acc.png" alt="ACC Credential Badge">
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
