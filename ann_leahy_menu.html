@@ -138,6 +138,37 @@
     footer img {
       max-width: 120px;
     }
+
+    .approach {
+      background-color: #fff;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    .approach h2 {
+      font-family: 'Prata', serif;
+      color: #0f2e33;
+      margin-bottom: 2rem;
+    }
+
+    .approach-steps {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .approach-box {
+      background-color: #f0f0f0;
+      padding: 1rem;
+      border-radius: 10px;
+      max-width: 250px;
+    }
+
+    .approach-box h3 {
+      margin-top: 0;
+      color: #0f2e33;
+    }
   </style>
 </head>
 <body>
@@ -163,13 +194,31 @@
 
   <img src="beach.png" alt="Beach scene" class="hero-image" />
 
-  <section class="home-content">
+  <section id="about" class="home-content">
     <img src="headshot.jpg" alt="Ann Leahy Headshot">
     <div class="text-block">
       <h1>Meet Ann</h1>
       <p>
         Ann Leahy is an ICF-certified coach passionate about helping individuals and organizations rediscover alignment, clarity, and joy. With a background in leadership and emotional intelligence, Ann creates a safe space for authentic transformation.
       </p>
+    </div>
+  </section>
+
+  <section id="approach" class="approach">
+    <h2>Approach</h2>
+    <div class="approach-steps">
+      <div class="approach-box">
+        <h3>Step 1: Explore</h3>
+        <p>Gain clarity on goals and obstacles.</p>
+      </div>
+      <div class="approach-box">
+        <h3>Step 2: Align</h3>
+        <p>Develop strategies that honor your values.</p>
+      </div>
+      <div class="approach-box">
+        <h3>Step 3: Grow</h3>
+        <p>Take action and sustain meaningful change.</p>
+      </div>
     </div>
   </section>
 
