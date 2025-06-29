@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Executive coaching for business owners and teams—unlock leadership potential and drive organizational success.">
   <title>Ann Leahy - executive coach</title>
-  <link href="https://fonts.googleapis.com/css2?family=Prata&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Prata&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Work Sans', sans-serif;
-      background-color: #f8f8f8;
+      background-color: #f5f3f0;
       margin: 0;
     }
 
@@ -17,7 +17,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background-color: #0f2e33;
+      background-color: #2a4a52;
       padding: 1rem 2rem;
       color: white;
       font-family: 'Prata', serif;
@@ -50,14 +50,20 @@
     }
 
     .nav-links a:hover, .mobile-nav a:hover {
-      color: #b47979;
+      color: #d4b896;
     }
 
     .button-link {
-      background-color: #5b8296;
+      background-color: #b8860b;
       padding: 0.5rem 1rem;
       border-radius: 25px;
       color: white;
+      transition: background-color 0.3s ease;
+    }
+
+    .button-link:hover {
+      background-color: #d4b896;
+      color: #2a4a52;
     }
 
     .hamburger {
@@ -72,7 +78,7 @@
     .mobile-nav {
       display: none;
       flex-direction: column;
-      background-color: #0f2e33;
+      background-color: #2a4a52;
       padding: 1rem 2rem;
     }
 
@@ -113,6 +119,17 @@
       padding: 3rem 2rem;
       background-color: #fff;
       flex-wrap: wrap;
+      position: relative;
+    }
+
+    .home-content::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #d4b896, transparent);
     }
 
     .home-content img {
@@ -127,7 +144,16 @@
     .text-block h1 {
       font-family: 'Prata', serif;
       font-size: 2rem;
-      color: #0f2e33;
+      color: #2a4a52;
+    }
+
+    .text-block h1::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 2px;
+      background-color: #b8860b;
+      margin: 0.5rem 0;
     }
 
     .text-block p {
@@ -139,7 +165,8 @@
     footer {
       text-align: center;
       padding: 2rem;
-      background-color: #eaeaea;
+      background-color: #f5f3f0;
+      border-top: 1px solid #d4b896;
     }
 
     footer img {
@@ -154,8 +181,17 @@
 
     .approach h2 {
       font-family: 'Prata', serif;
-      color: #0f2e33;
+      color: #2a4a52;
       margin-bottom: 2rem;
+    }
+
+    .approach h2::after {
+      content: '';
+      display: block;
+      width: 80px;
+      height: 2px;
+      background-color: #b8860b;
+      margin: 0.5rem auto;
     }
 
     .approach-steps {
@@ -166,16 +202,23 @@
     }
 
     .approach-box {
-      background-color: #f0f0f0;
-      padding: 1rem;
+      background-color: #f5f3f0;
+      padding: 1.5rem;
       border-radius: 10px;
       max-width: 175px;
+      border: 1px solid #d4b896;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 
+    .approach-box:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(212, 184, 150, 0.3);
     }
 
     .approach-box h3 {
       margin-top: 0;
-      color: #0f2e33;
+      color: #2a4a52;
+      font-weight: 600;
     }
 
     .contact {
@@ -186,8 +229,17 @@
 
     .contact h2 {
       font-family: 'Prata', serif;
-      color: #0f2e33;
+      color: #2a4a52;
       margin-bottom: 1rem;
+    }
+
+    .contact h2::after {
+      content: '';
+      display: block;
+      width: 80px;
+      height: 2px;
+      background-color: #b8860b;
+      margin: 0.5rem auto;
     }
 
     .contact-form {
@@ -200,20 +252,43 @@
 
     .contact-form input,
     .contact-form textarea {
-      padding: 0.5rem;
-      border: 1px solid #ccc;
-      border-radius: 5px;
+      padding: 0.75rem;
+      border: 2px solid #d4b896;
+      border-radius: 8px;
       font-family: inherit;
       font-size: 1rem;
+      background-color: #faf9f7;
+      transition: border-color 0.3s ease;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      outline: none;
+      border-color: #b8860b;
     }
 
     .contact-form button {
-      background-color: #5b8296;
+      background-color: #b8860b;
       color: #fff;
       border: none;
-      padding: 0.75rem;
+      padding: 0.75rem 2rem;
       border-radius: 25px;
       cursor: pointer;
+      font-weight: 500;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #d4b896;
+      color: #2a4a52;
+    }
+
+    .tagline {
+      color: #b8860b;
+      font-weight: 600;
+      font-size: 0.9rem;
+      letter-spacing: 2px;
+      margin: 0.5rem 0 1rem 0;
     }
   </style>
 </head>
@@ -244,6 +319,7 @@
     <img src="headshot.jpg" alt="Ann Leahy Headshot">
     <div class="text-block">
       <h1>Meet Ann</h1>
+      <p class="tagline">INDIVIDUAL & ORGANIZATIONAL COACHING</p>
       <p>
         Ann Leahy is an ICF-certified coach passionate about helping individuals and organizations rediscover alignment, clarity, and joy. With a background in leadership and emotional intelligence, Ann creates a safe space for authentic transformation.
       </p>
