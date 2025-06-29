@@ -172,12 +172,36 @@
       color: #0f2e33;
     }
 
+<<<<<<< .merge_file_SMgjwh
+    .testimonials {
+=======
     .contact {
+>>>>>>> .merge_file_xZtcFk
       background-color: #fff;
       padding: 3rem 2rem;
       text-align: center;
     }
 
+<<<<<<< .merge_file_SMgjwh
+    .testimonials h2 {
+      font-family: 'Prata', serif;
+      color: #0f2e33;
+      margin-bottom: 2rem;
+    }
+
+    .testimonial {
+      max-width: 600px;
+      margin: 0 auto 2rem;
+      font-style: italic;
+    }
+
+    .testimonial cite {
+      display: block;
+      margin-top: 0.5rem;
+      font-style: normal;
+      color: #0f2e33;
+      font-weight: 500;
+=======
     .contact h2 {
       font-family: 'Prata', serif;
       color: #0f2e33;
@@ -208,6 +232,7 @@
       padding: 0.75rem;
       border-radius: 25px;
       cursor: pointer;
+>>>>>>> .merge_file_xZtcFk
     }
   </style>
 </head>
@@ -264,6 +289,18 @@
     </div>
   </section>
 
+<<<<<<< .merge_file_SMgjwh
+  <section id="testimonials" class="testimonials">
+    <h2>Success Stories</h2>
+    <blockquote class="testimonial">
+      “Ann’s coaching transformed our leadership team’s communication.”
+      <cite>— Jane Doe, CEO of Acme Corp</cite>
+    </blockquote>
+    <blockquote class="testimonial">
+      “Working with Ann improved our productivity and morale.”
+      <cite>— John Smith, VP of Operations, Example Inc.</cite>
+    </blockquote>
+=======
   <section id="contact" class="contact">
     <h2>Contact</h2>
     <form class="contact-form">
@@ -273,6 +310,7 @@
       <button type="submit">Send</button>
     </form>
     <p>Prefer the phone? Call 123-456-7890 or email ann@example.com to schedule a consultation.</p>
+>>>>>>> .merge_file_xZtcFk
   </section>
 
   <footer>
