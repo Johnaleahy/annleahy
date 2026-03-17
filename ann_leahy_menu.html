@@ -290,6 +290,45 @@
       letter-spacing: 2px;
       margin: 0.5rem 0 1rem 0;
     }
+
+    .consultation-intro {
+      font-size: 1.2rem;
+      color: #2a4a52;
+      max-width: 600px;
+      margin: 0 auto 1rem auto;
+      font-weight: 500;
+    }
+
+    .consultation-desc {
+      color: #555;
+      max-width: 500px;
+      margin: 0 auto 1.5rem auto;
+      line-height: 1.6;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background-color: #b8860b;
+      color: #fff;
+      padding: 1rem 2rem;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1.1rem;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #d4b896;
+      color: #2a4a52;
+      transform: translateY(-2px);
+    }
+
+    .contact-alt {
+      margin-top: 1.5rem;
+      color: #777;
+      font-size: 0.9rem;
+    }
   </style>
 </head>
 <body>
@@ -300,7 +339,7 @@
       <li><a href="#approach">Approach</a></li>
       <li><a href="#services">Coaching</a></li>
       <li><a href="#testimonials">Stories</a></li>
-      <li><a href="#contact" class="button-link">Let’s Talk</a></li>
+      <li><a href="book.html" class="button-link">Let's Talk</a></li>
     </ul>
     <button class="hamburger" onclick="toggleMenu()">☰</button>
   </nav>
@@ -310,7 +349,7 @@
     <li><a href="#approach">Approach</a></li>
     <li><a href="#services">Coaching</a></li>
     <li><a href="#testimonials">Stories</a></li>
-    <li><a href="#contact" class="button-link">Let’s Talk</a></li>
+    <li><a href="book.html" class="button-link">Let's Talk</a></li>
   </ul>
 
   <img src="beach.png" alt="Beach scene" class="hero-image" />
@@ -347,14 +386,11 @@
   </section>
 
   <section id="contact" class="contact">
-    <h2>Contact</h2>
-    <form class="contact-form">
-      <input type="text" placeholder="Name" required>
-      <input type="email" placeholder="Email" required>
-      <textarea rows="5" placeholder="Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-    <p>Prefer the phone? Call 123-456-7890 or email ann@example.com to schedule a consultation.</p>
+    <h2>Ready to Explore What's Possible?</h2>
+    <p class="consultation-intro">Book a complimentary 15-minute consultation — a safe space to share your goals and see if we're the right fit.</p>
+    <p class="consultation-desc">This brief call is an opportunity to connect, ask questions, and explore whether coaching together feels right for you. No pressure, just an open conversation.</p>
+    <a href="book.html" class="cta-button">Book Your Free Consultation</a>
+    <p class="contact-alt">Prefer email? Reach out at ann@example.com</p>
   </section>
 
   <footer>
