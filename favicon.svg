@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Ann Leahy</title>
+  <rect width="64" height="64" rx="14" fill="#2a4a52"/>
+  <g fill="none" stroke="#f5f3f0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 43 23 17 34 43 M17 33h12 M42 17v26h12"/>
+  </g>
+  <path d="M20 52h24" stroke="#d4b896" stroke-width="3" stroke-linecap="round"/>
+</svg>
