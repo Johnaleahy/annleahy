@@ -14,4 +14,4 @@ GitHub Pages publishes the root of the `main` branch. Push a commit to `main`, t
 
 ## Contact setup still needed
 
-The homepage contains the placeholder `ann@example.com`. The booking form only displays a confirmation in the browser; it does not send requests or create calendar events. Connect Ann’s real email address or scheduling service before using the form for client bookings. See `todo.md` for calendar integration options.
+The homepage lists `coach@annleahy.ca` from Ann’s feedback; mailbox setup and delivery verification are still in progress. The booking form only displays a confirmation in the browser; it does not send requests or create calendar events. Connect the consultation form to Ann’s email address or scheduling service before using the form for client bookings. See `todo.md` for calendar integration options.

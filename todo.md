@@ -1,5 +1,12 @@
 # Future Work
 
+## Contact Email Setup
+
+- [ ] Finish setting up and activating `coach@annleahy.ca` (John is working on email setup).
+- [x] Replace the homepage placeholder with `coach@annleahy.ca` and a working email link, as provided in Ann’s October 8 feedback.
+- [ ] Connect the consultation form to the approved email or scheduling service so requests actually reach Ann.
+- [ ] Verify mailbox delivery and booking delivery before marking booking requests as received.
+
 ## Google Calendar Integration
 
 ### Overview
